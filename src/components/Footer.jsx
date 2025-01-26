@@ -1,44 +1,64 @@
 function Footer() {
   return (
     <>
-      <footer>
-        <img src="/src/assets/Logo.svg" alt="logo" />
-        <nav>
-          <ul>
-            <b>Doormat Navigation</b>
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Menu</a>
-            </li>
-            <li>
-              <a href="">Reservations</a>
-            </li>
-            <li>
-              <a href="">Order Online</a>
-            </li>
-            <li>
-              <a href="">Login</a>
-            </li>
-          </ul>
-          <ul>
-            <b>Contact</b>
-            <li>Address</li>
-            <li>phone Number</li>
-            <li>email</li>
-          </ul>
-          <ul>
-            <b>Social Media Links</b>
-            <li>Address</li>
-            <li>phone Number</li>
-            <li>email</li>
-          </ul>
-        </nav>
-      </footer>
+      <section className="bg-green py-10">
+        <footer className="container mx-auto px-4 text-white">
+          <nav>
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
+              <img
+                src="/src/assets/footer-logo.d09eb2af6c5a2225eedf.png"
+                alt="logo"
+                className="h-auto w-40"
+              />
+              <ul>
+                <h3 className="text-base font-bold">Doormat Navigation</h3>
+                <li>
+                  <a href="/" className="text-base">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-base">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-base">
+                    Menu
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-base">
+                    Reservations
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-base">
+                    Order Online
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-base">
+                    Login
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <h3 className="text-base font-bold">Contact</h3>
+                <li className="text-base">Address</li>
+                <li className="text-base">Phone Number</li>
+                <li className="text-base">Email</li>
+              </ul>
+              <ul>
+                <h3 className="text-base font-bold">Social Media Links</h3>
+                <li className="text-base">Facebook</li>
+                <li className="text-base">Instagram</li>
+                <li className="text-base">Twitter</li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+      </section>
     </>
   );
 }
