@@ -8,7 +8,7 @@ function Header() {
           <img
             src="/src/assets/Logo.svg"
             alt="Logo"
-            className="h-[min(10vw, 3rem)] md:h-[min(5vw, 4rem)]"
+            className="min-w-min p-4"
           />
         </a>
         <Nav />

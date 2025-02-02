@@ -22,7 +22,7 @@ function Main() {
                   in nunc condimentum fermentum. Nullam nec magna in nunc
                   condimentum fermentum.
                 </p>
-                <button className="hover:bg-yellow-600 mt-6 rounded-2xl bg-yellow px-6 py-3 font-bold text-green transition">
+                <button className="hover:bg-yellow-600 mt-6 rounded-2xl bg-yellow px-6 py-3 font-bold transition-all duration-300 hover:-translate-y-1">
                   Book a Table
                 </button>
               </div>
@@ -41,12 +41,12 @@ function Main() {
           <div className="container mx-auto px-4">
             <div className="mx-auto flex w-3/4 flex-wrap items-center justify-between pb-10">
               <h2 className="text-heading">Specials</h2>
-              <button className="my-8 rounded-2xl bg-yellow px-4 py-2 text-base font-bold">
+              <button className="hover:bg-yellow-600 mt-6 rounded-2xl bg-yellow px-6 py-3 font-bold transition-all duration-300 hover:-translate-y-1">
                 Online Menu
               </button>
             </div>
             <div className="mx-auto flex w-3/4 flex-wrap justify-center md:justify-between">
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 md:gap-10">
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 md:gap-10 lg:grid-cols-3">
                 <Card
                   img="greek salad.jpg"
                   title="Greek Salad"
@@ -75,7 +75,7 @@ function Main() {
             <h2 className="py-10 text-center text-heading font-bold text-white">
               Testimonials
             </h2>
-            <div className="mx-auto flex w-3/4 flex-wrap items-center justify-center gap-6 py-10 md:gap-10">
+            <div className="mx-auto flex w-3/4 flex-col items-center justify-center gap-6 py-10 sm:block md:block lg:flex lg:flex-row lg:gap-10">
               <Testimonial
                 img="https://i.pravatar.cc/100?img=1"
                 name="Kenzie Edgar"
@@ -100,9 +100,9 @@ function Main() {
 
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="mx-auto flex w-3/4 items-center justify-between">
-              <div className="w-3/4">
-                <h1 className="text-heading font-bold text-yellow">
+            <div className="mx-auto flex w-full flex-col items-center justify-between gap-10 md:w-3/4 md:flex-row">
+              <div className="w-full sm:pb-4 md:w-1/2">
+                <h1 className="font-markazi text-heading font-bold text-yellow">
                   Little Lemon
                 </h1>
                 <h2 className="text-subHeading font-bold">Chicago</h2>
@@ -114,16 +114,17 @@ function Main() {
                   condimentum fermentum.
                 </p>
               </div>
-              <div className="relative w-3/5">
+
+              <div className="relative flex w-full justify-center md:w-1/2">
                 <img
                   src="/src/assets/Mario and Adrian b.jpg"
                   alt="founders"
-                  className="h-auto max-w-[300px] rounded-2xl object-fill md:max-w-[400px] lg:max-w-[450px]"
+                  className="h-auto max-w-[250px] rounded-2xl object-fill sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px]"
                 />
                 <img
                   src="/src/assets/Mario and Adrian A.jpg"
                   alt="founders"
-                  className="absolute -top-16 left-12 h-auto max-w-[200px] rounded-2xl object-fill md:max-w-[250px] lg:max-w-[300px]"
+                  className="absolute -top-10 left-10 h-auto max-w-[150px] rounded-2xl object-fill sm:max-w-[200px] md:max-w-[250px] lg:max-w-[300px]"
                 />
               </div>
             </div>

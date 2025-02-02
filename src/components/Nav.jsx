@@ -10,7 +10,6 @@ function Nav() {
 
   return (
     <div className="relative">
-      {/* Mobile Menu Toggle Button */}
       <button
         onClick={toggleMenu}
         className="z-20 flex items-center text-green md:hidden"
@@ -19,47 +18,61 @@ function Nav() {
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
 
-      {/* Navigation Menu */}
       <nav
-        className={`md:bg-transparent absolute right-0 top-full w-48 rounded-lg bg-white p-4 shadow-lg transition-transform duration-300 md:static md:block md:w-auto md:p-0 md:shadow-none ${
-          isOpen ? "block" : "hidden"
-        }`}
+        className={`md:bg-transparent absolute right-0 top-full w-48 rounded-lg bg-white p-4 shadow-lg transition-transform duration-300 md:static md:block md:w-auto md:p-0 md:shadow-none ${isOpen ? "block" : "hidden"}`}
       >
         <ul className="flex flex-col gap-4 md:flex-row md:gap-6">
           <li>
-            <a href="/" className="text-gray-800 text-base hover:text-green">
+            <a
+              href="/"
+              className="text-gray-800 relative text-base transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-green before:transition-all before:duration-300 hover:before:w-full"
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="" className="text-gray-800 text-base hover:text-green">
+            <a
+              href="#"
+              className="text-gray-800 relative text-base transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-green before:transition-all before:duration-300 hover:before:w-full"
+            >
               About
             </a>
           </li>
           <li>
-            <a href="" className="text-gray-800 text-base hover:text-green">
+            <a
+              href="#"
+              className="text-gray-800 relative text-base transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-green before:transition-all before:duration-300 hover:before:w-full"
+            >
               Menu
             </a>
           </li>
           <li>
-            <a href="" className="text-gray-800 text-base hover:text-green">
+            <a
+              href="#"
+              className="text-gray-800 relative text-base transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-green before:transition-all before:duration-300 hover:before:w-full"
+            >
               Reservation
             </a>
           </li>
           <li>
-            <a href="" className="text-gray-800 text-base hover:text-green">
+            <a
+              href="#"
+              className="text-gray-800 relative text-base transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-green before:transition-all before:duration-300 hover:before:w-full"
+            >
               Order Online
             </a>
           </li>
           <li>
-            <a href="" className="text-gray-800 text-base hover:text-green">
+            <a
+              href="#"
+              className="text-gray-800 relative text-base transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-green before:transition-all before:duration-300 hover:before:w-full"
+            >
               Login
             </a>
           </li>
         </ul>
       </nav>
 
-      {/* Overlay for Mobile Menu */}
       {isOpen && (
         <div
           onClick={toggleMenu}

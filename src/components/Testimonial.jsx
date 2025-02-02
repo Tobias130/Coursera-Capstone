@@ -19,24 +19,26 @@ function Testimonial(props) {
   };
 
   return (
-    <div className="px-3 md:w-1/3">
-      <div className="border-gray-200 text-gray-800 mx-auto mb-6 w-full rounded-2xl border bg-white p-5 font-light">
-        <div className="mb-4 flex w-full items-center">
-          <div className="bg-gray-50 border-gray-200 h-10 w-10 overflow-hidden rounded-full border">
-            <img src={props.img} alt="profile" />
+    <div className="mb-6 w-full px-3">
+      <div className="border-gray-200 flex h-full flex-col rounded-2xl border bg-white p-5">
+        <div className="mb-4 flex items-center">
+          <div className="mr-3 h-12 w-12 flex-shrink-0 overflow-hidden rounded-full">
+            <img
+              src={props.img}
+              alt="profile"
+              className="h-full w-full object-cover"
+            />
           </div>
-          <div className="flex-grow pl-3">
+          <div className="flex-grow">
             <h6 className="text-sm text-gray-600 font-bold uppercase">
-              {props.name}.
+              {props.name}
             </h6>
           </div>
-          <div className="flex items-center">{renderStars()}</div>
+          <div className="flex items-center space-x-1">{renderStars()}</div>
         </div>
-        <div className="w-full">
-          <blockquote className="mb-3">
-            <p className="font-bold">" {props.text} "</p>
-          </blockquote>
-        </div>
+        <blockquote className="flex-grow">
+          <p className="text-gray-800 italic">" {props.text} "</p>
+        </blockquote>
       </div>
     </div>
   );

@@ -16,11 +16,12 @@ export default {
     },
     fontSize: {
       base: [
-        "16pt",
+        "14pt",
         {
           lineHeight: "1.5",
         },
       ],
+
       titleCard: [
         "18pt",
         {
@@ -30,7 +31,11 @@ export default {
       heading: "40pt",
       subHeading: "18pt",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        markazi: ["Markazi Text", "serif"],
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
