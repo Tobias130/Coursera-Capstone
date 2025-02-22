@@ -1,7 +1,12 @@
+import { useState } from "react";
 import Card from "./Card";
 import Testimonial from "./Testimonial";
 
-function Main() {
+const Main = () => {
+  (updateTimes) => {
+    setAvailableTimes(availableTimes.filter((time) => time !== updateTimes));
+  };
+
   return (
     <>
       <main>
@@ -23,7 +28,9 @@ function Main() {
                   condimentum fermentum.
                 </p>
                 <button className="hover:bg-yellow-600 mt-6 rounded-2xl bg-yellow px-6 py-3 font-bold transition-all duration-300 hover:-translate-y-1">
-                  Book a Table
+                  <a href="/booking" className="text-black">
+                    Book a Table
+                  </a>
                 </button>
               </div>
               <div className="flex justify-center lg:w-1/2">
@@ -133,6 +140,6 @@ function Main() {
       </main>
     </>
   );
-}
+};
 
 export default Main;

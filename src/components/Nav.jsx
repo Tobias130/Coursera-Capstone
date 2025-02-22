@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-function Nav() {
+const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -32,7 +32,7 @@ function Nav() {
           </li>
           <li>
             <a
-              href="#"
+              href="/about"
               className="text-gray-800 relative text-base transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-green before:transition-all before:duration-300 hover:before:w-full"
             >
               About
@@ -40,7 +40,7 @@ function Nav() {
           </li>
           <li>
             <a
-              href="#"
+              href="/menu"
               className="text-gray-800 relative text-base transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-green before:transition-all before:duration-300 hover:before:w-full"
             >
               Menu
@@ -48,7 +48,7 @@ function Nav() {
           </li>
           <li>
             <a
-              href="#"
+              href="/reservation"
               className="text-gray-800 relative text-base transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-green before:transition-all before:duration-300 hover:before:w-full"
             >
               Reservation
@@ -56,7 +56,7 @@ function Nav() {
           </li>
           <li>
             <a
-              href="#"
+              href="/order-online"
               className="text-gray-800 relative text-base transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-green before:transition-all before:duration-300 hover:before:w-full"
             >
               Order Online
@@ -64,7 +64,7 @@ function Nav() {
           </li>
           <li>
             <a
-              href="#"
+              href="/login"
               className="text-gray-800 relative text-base transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-green before:transition-all before:duration-300 hover:before:w-full"
             >
               Login
@@ -73,6 +73,7 @@ function Nav() {
         </ul>
       </nav>
 
+      {/* Does not work */}
       {isOpen && (
         <div
           onClick={toggleMenu}
@@ -81,6 +82,6 @@ function Nav() {
       )}
     </div>
   );
-}
+};
 
 export default Nav;

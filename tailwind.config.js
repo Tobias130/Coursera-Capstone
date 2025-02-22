@@ -6,6 +6,7 @@ export default {
       sans: ["ui-sans-serif", "system-ui"],
     },
     colors: {
+      red: "#FF0000",
       green: "#495e57",
       yellow: "#F4CE14",
       white: "#fff",

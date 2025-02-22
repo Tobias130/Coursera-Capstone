@@ -1,6 +1,6 @@
 import Nav from "./Nav";
 
-function Header() {
+const Header = () => {
   return (
     <header className="container mx-auto px-4 py-6 md:py-10">
       <div className="mx-auto flex w-3/4 items-center justify-between">
@@ -15,6 +15,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

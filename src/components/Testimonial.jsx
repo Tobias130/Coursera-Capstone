@@ -1,4 +1,4 @@
-function Testimonial(props) {
+const Testimonial = (props) => {
   const renderStars = () => {
     const stars = [];
     for (let i = 0; i < props.stars; i++) {
@@ -42,6 +42,6 @@ function Testimonial(props) {
       </div>
     </div>
   );
-}
+};
 
 export default Testimonial;

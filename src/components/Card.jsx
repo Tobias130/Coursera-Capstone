@@ -1,4 +1,4 @@
-function Card(props) {
+const Card = (props) => {
   return (
     <div className="rounded-2xl bg-highlight1 shadow-xl transition-transform duration-300 hover:scale-105">
       <img
@@ -17,6 +17,6 @@ function Card(props) {
       </div>
     </div>
   );
-}
+};
 
 export default Card;
